@@ -1,0 +1,87 @@
+/* Configurações do estilo gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+
+    background-color:white;
+    height: 160vh;
+}
+
+
+.Interface{
+    max-width: 1240px;
+    margin: 3 auto;
+}
+.flex{
+    display:flex;
+}
+/*Configurações cabeçalho*/
+header {
+ padding: 60px 6%;
+}
+header > .Interface{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+header a{
+   color: rgb(131, 245, 138);
+   text-decoration: none;
+   font-weight: 900;
+   display: inline-block;
+   
+}
+header a:hover{
+    transform: scale(1.09);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+
+    display: inline-block;
+    padding: 0 60px;
+}
+
+/* Configurações do topo do site*/
+section.topo-do-site{
+    padding: 80px 8%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.topo-do-site h1{
+    color: rgb(131, 245, 138);
+    font-size: 40px;
+    line-height: 90px;
+}
+.topo-do-site p {
+    color: rgb(62, 241, 74);
+    margin: 40px 0;
+}
+
+.topo-do-site .selfie img{
+    position: relative;
+    animation:flutuante 2s ease-in-out infinite alternate  ;
+}
+
+
+@keyframes flutuante {
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}

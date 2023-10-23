@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Codigo da Font utilizada-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+
+<!--final do codigo da fonte-->
+
+<style>
+    /*COMEÇO CSS*/
+
+*{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        body {
+            background-color: white;
+            height: 160vh;
+        }
+
+        .Interface-principal{
+            max-width: 1240px;
+            margin: 3 auto;
+        }
+        .flex{
+            display:flex;
+        }
+
+ /* ESTILO CABEÇALHO*/
+        
+ header > .Interface-principal{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(244, 244, 129);
+        }   
+        header a{
+            color: rgb(34, 204, 45) ;
+            text-decoration: none;
+        }
+        
+        header nav ul{
+            list-style: none;
+        }
+        
+        header nav ul li{
+            display: inline-block;
+            padding: 0 40px;
+        }
+        header .logo{
+            margin: 0;
+            padding: 0 40px;
+        }
+        /*FIM ESTILO CABEÇALHO*/
+        body h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 ;
+            background-color: rgb(243, 243, 158);
+            color:white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+
+        }
+        formularioprincipal{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form  {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+
+        form input  {
+            outline: unset;
+            padding: 20px;
+            min-width: 400px;
+            border: 3px solid cornsilk;
+            border-radius: 30px;
+        }
+        
+        form input:focus, form textarea:focus{
+            background-color: bisque;
+        }
+        form input[type=submit]{
+            background-color: cornsilk;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .formularioprincipal {
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+</style>
+
+    <title>Entre em contato</title>
+</head>
+</head>
+<body>
+    <header>
+        <div class = "Interface-principal">
+            <div class="logo">
+                
+                    <img src="imagens/frodologocerto.png"width="210" height="203">
+                
+                
+            </div class= "menuprincipal"> 
+                    <nav class="menu"><!--meu computador-->
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="sobremim.html">Sobre mim</a></li> 
+                            <li><a href="curriculo.html">Formação</a></li>
+                            <li><a href="curriculo.html">Portfólio</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+        
+                    </nav>
+               </div> <!--final div menuprincipal-->
+              
+            </div> <!--final do logo-->
+        </div> <!--final da interface principal-->
+
+<!--COMEÇO SESSAO CONTATO-->
+    </header>
+            <h1>ENTRE EM CONTATO</h1>
+            <section>
+                <form class="formularioprincipal">
+                <div class="formularionome">
+                    <label><span style="color:darkgreen;font-weight: bold;">Nome</span></label>
+                    <input type="text" placeholder="Digite seu nome" name="nome" required/>
+
+                </div><!--FIM DIV FORMULARIO NOME-->
+                <div class="formulariotelefone">
+                    <label><span style="color:darkgreen;font-weight: bold;">Telefone</span></label>
+                    <input type="text" placeholder="Digite seu telefone" name="telefone" required/>
+
+                </div><!--FIM DIV FORMULARIO TELEFONE-->
+                <div class="formularioemail">
+                    <label><span style="color:darkgreen;font-weight: bold;">Email</span></label>
+                    <input type="text" placeholder="Digite seu email" name="email" required/>
+
+                </div><!--FIM DIV FORMULARIO EMAIL-->
+                <div class="formulariomensagem">
+                    <label><span style="color:darkgreen;font-weight: bold;">Mensagem</span></label>
+                     <textarea rows="10" name="mensagem" required></textarea>
+
+                </div><!--FIM DIV FORMULARIO MENSAGEM-->
+                <div class="botao">
+
+                    <input type="submit" value="Enviar"/>
+                </div> 
+
+                </form>
+
+
+
+
+                
+
+
+
+            </section>
+    
+</body>
+</html>
